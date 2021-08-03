@@ -1,0 +1,49 @@
+.max-wrapper-res{
+    grid-template-columns: 0px 1920px;
+}
+/* 1199 */
+
+@media only screen and (max-width: 1199px) {
+    .dashboard-info-container{
+        grid-template-columns: 100%;
+    }
+    .max-wrapper{
+        max-width: 1199px;
+        grid-template-columns: 300px minmax(858px);
+        grid-gap: 41px;
+    }
+    .sidebar-wrapper{
+        width: 300px;
+    }
+    .dashboard-wrapper{
+        max-width: 858px;
+    }
+  }
+
+  @media only screen and (max-width: 1199px) {
+    .search-wrapper{
+        display: none !important;
+    }
+    div.dashboard-wrapper>div.top-bar-wrapper{
+        grid-template-columns: 1fr 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .main-income-container>.income-wrapper{
+        grid-template-columns: 100%;
+    }
+    .graph-wrapper{
+        margin-top: 150px;
+    }
+    .graph-wrapper{
+        width: 100% !important;
+    }
+    #chart-div{
+        width: 300px;
+    }
+    .graph{
+        overflow: scroll;
+    }
+  }
+  

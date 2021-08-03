@@ -1,0 +1,236 @@
+@font-face {
+    font-family: GT Walsheim Pro;
+    src: url(../font/GTWalsheimPro-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #D9EAFF;
+    font-family: GT Walsheim Pro;
+}
+
+body{
+    background: #0B0C1F;
+}
+a{
+    text-decoration:none;
+}
+/* //1536 display width*/
+/* 1229 */
+/* 300 + 41 +858 + 30 +620  */
+/* 71 */
+/* 1199 */
+/* minmax(1579px) */
+.max-wrapper{
+    margin: 0 auto;
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: 300px 1579px;
+    position: relative;
+    grid-gap: 41px;
+}
+.sidebar-wrapper{
+    position: absolute;
+    width: 300px;
+    height: 1900px;
+    left: 0px;
+    top: 0px;
+    background: #101128;
+    transition: 0.5s all ease-in-out;
+    z-index: 9;
+}
+.dashboard-wrapper{
+    position: absolute;
+    max-width: 1508px;
+    left: 341px;
+    top: 0px;
+    transition: 0.5s all ease-in-out;
+    z-index: 1;
+    /* overflow: scroll; */
+}
+/* profile */
+.logo-wrapper{
+    margin-left: 53px;
+    margin-top: 28px;
+}
+.logo-wrapper>a>img{
+    width: 230px;
+    height: 48.79px;
+}
+
+.sidebar-profile-wrapper{
+    margin-left: 53px;
+    margin-top: 67px;
+    display: grid;
+    grid-template-columns: 98px 1fr;
+    grid-gap: 10px;
+}
+.sidebar-profile-wrapper>div.sidebar-profile{
+    width: 98px;
+    height: 98px;
+    background: #2D1634;
+    border-radius: 10px;
+}
+.sidebar-profile-wrapper>.sidebar-profile-status>.status-wrapper>div{
+    position: relative;
+    width: 69px;
+    height: 22px;
+    background: #1A343A;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.sidebar-profile-wrapper>.sidebar-profile-status>.status-wrapper>div>span:last-child{
+    position:absolute;
+    left: 20px;
+    top: 1.5px;
+    color: #44C283;
+}
+.sidebar-profile-wrapper>.sidebar-profile-status>.status-wrapper>div>.active-icon{
+    position:absolute;
+    top:7.9px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    background: #44C283;
+    border-radius:50%;
+}
+.sidebar-profile-wrapper>.sidebar-profile-status>p{
+    font-family: GT Walsheim Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.sidebar-profile-wrapper>.sidebar-profile-status>.user-id{
+    margin-top: 17px;
+    margin-bottom:7px;
+}
+.sidebar-profile-info>h1{
+    width: 240px;
+    font-size: 21px;
+    line-height: 128.33%;
+}
+.sidebar-profile-info>h1>span{
+    color: #E8D400;
+    font-style: italic;
+    font-weight: 350;
+}
+.sidebar-profile-info>p{
+    margin-top: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 0.5;
+}
+nav{
+    width: 100%;
+}
+nav>.nav-wrapper>ul{
+    list-style: none;
+}
+nav>.nav-wrapper>ul>li{
+    margin-top:60px
+}
+nav>.nav-wrapper>ul>li>a>div.nav-link-wrapper{
+    display: flex;
+    position: relative;
+    margin: 10px 0;
+}
+nav>.nav-wrapper>ul>li>a>div.nav-link-wrapper>div.link-active-icon{
+    position: absolute;
+    left:0;
+    top: -3px;
+}
+nav>.nav-wrapper>ul>li>a>div.nav-link-wrapper>div.link-icon{
+    position: absolute;
+    left: 50px;
+}
+nav>.nav-wrapper>ul>li>a>div.nav-link-wrapper>div.link-name{
+    position: absolute;
+    left: 90px;
+}
+nav>.nav-wrapper>ul>li>a>div.nav-link-wrapper>div.dropdown-icon{
+    position: absolute;
+    right: 15px;
+}
+
+ /* topbar */
+div.dashboard-wrapper>div.top-bar-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding:16px 0px;
+}
+
+.menu-logo{
+    margin-right: 20px !important;
+    background: #101128;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+div.dashboard-wrapper>div.top-bar-wrapper>.tap-bar-search>.menu-logo>img{
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    padding:7px 15px;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-search{
+    display: flex;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-search>div.search-wrapper{
+    max-width: 359px;
+    height: 53px;
+    display: flex;
+    background: #101128;
+    box-shadow: 0px 4px 40px rgba(33, 132, 250, 0.02);
+    border-radius: 10px;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-search>div.search-wrapper>div.search-icon>img{
+   margin:13px 20px 14px 17px;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-search>div.search-wrapper>div.search-input{
+    width: 100%;
+    padding-right: 15px;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-search>div.search-wrapper>div.search-input>input{
+    width: 100%;
+    height: 100%;
+    background: #101128;
+    box-shadow: 0px 4px 40px rgba(33, 132, 250, 0.02);
+    border-radius: 10px;
+    border:none;
+    font-size: 16px;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-search>div.search-wrapper>div.search-input>input:focus{
+    outline: none;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-search>div.search-wrapper>div.search-input>input::placeholder{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-option{
+    display:flex;
+    justify-content: flex-end;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-option>div{
+    width: 55px;
+    height: 52.88px;
+    background: #101128;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-option>div.notification>img{
+    margin-top: 10px;
+    width: 21.94px;
+    height: 28.18px;
+}
+div.dashboard-wrapper>div.top-bar-wrapper>div.tap-bar-option>div.Setting>img{
+    margin-top: 15px;
+}

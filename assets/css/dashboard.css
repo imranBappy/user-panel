@@ -1,0 +1,300 @@
+
+.dashboard-info-container{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 858px 620px;
+    grid-gap: 30px;
+}
+/* // 1508 */
+.dashboard-left{
+    width:100%;
+}
+.total-income-wrapper{
+    margin-top: 50px;
+    width: 100%;
+    height: 105px;
+    background: #101128;
+    border-radius: 7px;
+    display:grid;
+    grid-template-columns:50% 50%;
+}
+.total-income-wrapper>.total-income-left{
+    padding: 20px;
+    display:flex;
+}
+.total-income-wrapper>.total-income-left>div:first-child{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+    border-radius: 3px;
+    background: rgba(32, 34, 71, 1);
+}
+.d-income-icon{
+    height: 27.99991226196289px;
+    width: 27.611957550048828px;
+}
+.d-income-title{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+}
+.total-income-wrapper>.total-income-left>div:last-child{
+    margin: 5px 0px 0px 20px;
+}
+.total-income-wrapper>.total-income-left>div:last-child>p{
+    margin-top:5px
+}
+.total-income-wrapper>.total-income-right{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.see-detailed{
+    height: 34px;
+    width: 98px;
+    border-radius: 5px;
+    border: 1px solid rgba(51, 53, 91, 1);
+    background: rgba(16, 17, 40, 1);
+    cursor: pointer;
+}
+.total-income-wrapper>.total-income-right>button{
+    margin:0px 20px;
+}
+.balance-h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 128.33%;
+    color: #D9EAFF;
+}
+
+
+/* main-income-container*/
+.main-income-container{
+    max-width: 830px;
+}
+.main-income-container>.income-wrapper{
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:30px;
+    height: 105px;
+}
+.main-income-container>.income-wrapper>.income{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background: #101128;
+    border-radius: 7px;
+}
+.main-income-container>.income-wrapper>.income>.income-left{
+    padding: 20px;
+    display:flex;
+}
+.main-income-container>.income-wrapper>.income>.income-left>div:first-child{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+    border-radius: 3px;
+    background: rgba(32, 34, 71, 1);
+}
+
+.main-income-container>.income-wrapper>.income>.income-left>div:last-child{
+    margin: 0px 0px 0px 20px;
+}
+.main-income-container>.income-wrapper>.income>.income-right{
+    display:flex;
+    justify-content: flex-end;
+}
+.main-income-container>.income-wrapper>.income>.income-right>button{
+    margin: 20px 20px 0px 0px;
+}
+
+/* start dashboard site */
+.graph-wrapper{
+    margin-top: 48px;
+    height: 337px;
+    width: 620px;
+    left: 1229px;
+    top: 134px;
+    border-radius: 7px;
+    background: rgba(16, 17, 40, 1);
+}
+.graph-top-bar{
+    width: 100%;
+    height: 56px;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(36, 38, 70, 1);
+}
+.graph-top-bar>h3{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #D9EAFF;
+    margin-left: 20px;
+}
+.graph-top-bar-icons>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52.88461685180664px;
+    width: 55px;
+    border-radius: 10px;
+    background: rgba(68, 194, 131, 0.2);
+    margin-left: 10px;
+}
+.graph-top-bar-icons>div:last-child{
+    margin-right: 30px;
+}
+.graph-top-bar-icons{
+    display: flex;
+    justify-content: flex-end;
+}
+.graph{
+    width: 100%;
+}
+
+
+/* user list */
+.user-list{
+    margin-top:50px;
+    max-width: 620px;
+    height: 1268px;
+    background: #101128;
+    border-radius: 7px;
+}
+.user-list>h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    padding: 16px 0px 20px 30px
+}
+.user-top-btn{
+    margin-left: 30px;
+}
+.user-top-btn>button:first-child{
+    width: 115px;
+    height: 42px;
+    background: #1B1C37;
+    border-radius: 7px 7px 0px 0px;
+    border:none;
+    color: rgba(233, 213, 0, 1);
+}
+.user-top-btn>button:last-child{
+    width: 115px;
+    height: 34px;
+    background: #141532;
+    border-radius: 7px 7px 0px 0px;
+    border:none;
+}
+.user-wrapper{
+    margin-left: 30px;
+    background: #1B1C37;
+    border-radius: 0px 7px 7px 7px;
+    max-width: 560px;
+    height: 100%;
+}
+.l-user{
+    display:grid;
+    grid-template-columns:70% 30%;
+    border-bottom: 1px solid rgba(217, 234, 255, 0.1) ;
+}
+.l-user>div{
+    display: flex;
+}
+.l-user>div>div:first-child{
+    display:flex;
+    margin: 15px;
+    width: 54px;
+    height: 54px;
+}
+
+.l-user>div>div:last-child{
+    margin-top:15px;
+    margin-left: 5px;
+}
+
+.l-user>div>div:last-child>h5{
+    font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 150%;
+}
+.l-user>div>div:last-child>p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%
+}
+
+.l-balance{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+.Monthly-Assocates-wrapper{
+    margin-top: 100px;
+    max-width: 857px;
+    height: 572px;
+    background: #101128;
+    border-radius: 7px;
+    padding-left: 30px;
+}
+.Monthly-Assocates-wrapper>h3{
+    padding-top: 20px;
+
+}
+.Monthly-Assocates-margin{
+    margin-top:30px;
+    margin-left: 0px !important;
+}
+.passive-income{
+    height: 84px;
+    max-width: 797px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background: rgba(27, 28, 55, 1);
+    border-bottom: 1.5px solid rgba(217, 234, 255, 0.1);
+}
+.passive-income>div>button{
+    width: 98px;
+    height: 34px;
+    border: 1px solid #33355B;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: rgba(27, 28, 55, 1);
+}
+
+.passive-income-btn{
+    display:flex;
+    justify-content: flex-end;
+}
+.passive-income-btn>button{
+    margin-top: 22px;
+    margin-right: 15px;
+}
+.passive-income>div>h6{
+    margin-top: 24px;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 150%;
+}
+.passive-income-balance{
+    text-align: center; 
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 24px;
+
+}

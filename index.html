@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="./assets/js/chart.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <title>Max Broker</title>
+  </head>
+  <body>
+    <div id="max-wrapper" class="max-wrapper">
+      <div id="sidebar" class="sidebar-wrapper">
+        <div id="logo-wrapper" class="logo-wrapper">
+          <a href="/">
+            <img
+              id="logo"
+              class="large-logo logo"
+              src="./assets/img/main-logo.svg"
+              alt="Max-Broker-logo"
+            />
+          </a>
+        </div>
+        <div id="sidebar-profile-wrapper" class="sidebar-profile-wrapper">
+          <div id="sidebar-profile" class="sidebar-profile">
+            <img
+              id="nav-profile-pic"
+              class="nav-profile-pic"
+              src="./assets/img/user-avatar.svg"
+              alt="profile-pic"
+            />
+          </div>
+          <div class="sidebar-profile-status">
+            <div class="status-wrapper">
+              <div>
+                <span class="active-icon"></span>
+                <span>Active</span>
+              </div>
+            </div>
+            <p class="user-id user-info-res">Uesr ID: 6310450</p>
+            <p class="user-info-res">Sponsor ID: 123456</p>
+          </div>
+          <div class="sidebar-profile-info">
+            <h1 id="user-name" class="user-name">
+              <span>Hello,</span> Enriques Jr.
+            </h1>
+            <p>New user</p>
+          </div>
+        </div>
+        <!-------navbar start--------->
+        <nav>
+          <div class="nav-wrapper">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="nav-link-wrapper">
+                    <div class="link-active-icon">
+                      <img
+                        src="./assets/img/link-active-icon.svg"
+                        alt="link-active"
+                      />
+                    </div>
+                    <div class="link-icon">
+                      <img src="./assets/img/dashboard .svg" alt="dashboard" />
+                    </div>
+                    <div class="link-name">Dashboard</div>
+                    <div class="dropdown-icon"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="nav-link-wrapper">
+                    <div class="link-active-icon">
+                      <!-- <img src="./assets/img/link-active-icon.svg" alt="link-active"> -->
+                    </div>
+                    <div class="link-icon">
+                      <img
+                        src="./assets/img/corporation-deactive.svg"
+                        alt="dashboard"
+                      />
+                    </div>
+                    <div class="link-name">Corporation </div>
+                    <div class="dropdown-icon">
+                      <img
+                        src="./assets/img/dropdown-icon.svg"
+                        alt="dropdown"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="nav-link-wrapper">
+                    <div class="link-active-icon">
+                      <!-- <img src="./assets/img/link-active-icon.svg" alt="link-active"> -->
+                    </div>
+                    <div class="link-icon">
+                      <img
+                        src="./assets/img/Finance-deactive.svg"
+                        alt="Finance-deactive"
+                      />
+                    </div>
+                    <div class="link-name">Finance </div>
+                    <div class="dropdown-icon">
+                      <img
+                        src="./assets/img/dropdown-icon.svg"
+                        alt="dropdown"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="nav-link-wrapper">
+                    <div class="link-active-icon">
+                      <!-- <img src="./assets/img/link-active-icon.svg" alt="link-active"> -->
+                    </div>
+                    <div class="link-icon">
+                      <img
+                        src="./assets/img/Profile-deactive.svg"
+                        alt="dashboard"
+                      />
+                    </div>
+                    <div class="link-name">Profile</div>
+                    <div class="dropdown-icon">
+                      <img
+                        src="./assets/img/dropdown-icon.svg"
+                        alt="dropdown"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="nav-link-wrapper">
+                    <div class="link-active-icon">
+                      <!-- <img src="./assets/img/link-active-icon.svg" alt="link-active"> -->
+                    </div>
+                    <div class="link-icon">
+                      <img
+                        src="./assets/img/Affiliate-deactive.svg"
+                        alt="Affiliate"
+                      />
+                    </div>
+                    <div class="link-name">Affiliate Pro</div>
+                    <div class="dropdown-icon">
+                      <img
+                        src="./assets/img/dropdown-icon.svg"
+                        alt="dropdown"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!--------side bar end--------->
+      <div id="dashboard" class="dashboard-wrapper">
+        <div class="top-bar-wrapper">
+          <div class="tap-bar-search">
+            <div class="menu-logo">
+              <img class="x" id="menu" src="./assets/img/menu.svg" alt="menu" />
+            </div>
+            <div class="search-wrapper">
+              <div class="search-icon">
+                <img src="./assets/img/Search.svg" alt="search" />
+              </div>
+              <div class="search-input">
+                <input placeholder="Type here to Search" type="search" />
+              </div>
+            </div>
+          </div>
+          <div class="tap-bar-option">
+            <div class="notification">
+              <img src="./assets/img/notification.svg" alt="notification" />
+            </div>
+            <div class="Setting">
+              <img src="./assets/img/Setting.svg" alt="Setting" />
+            </div>
+            <div class="user-abatar">
+              <img src="./assets/img/user-abatar-icon.svg" alt="user" />
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-info-container">
+          <div class="dashboard-left">
+            <div class="total-income-wrapper">
+              <div class="total-income-left">
+                <div>
+                  <img
+                    class="d-income-icon"
+                    src="./assets/img/total-income.svg"
+                    alt="total"
+                  />
+                </div>
+                <div>
+                  <h4 class="d-income-title">Total Income</h4>
+                  <p>Percentage Income: 55%</p>
+                </div>
+              </div>
+              <div class="total-income-right">
+                <h3 class="balance-h3">$ 550</h3>
+                <button class="see-detailed">See Detailed</button>
+              </div>
+            </div>
+            <div class="main-income-container">
+              <div class="income-wrapper">
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(233, 213, 0, 0.1);" >
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Passive-Income.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">Passive Income</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(33, 132, 250, 0.2);                    ">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Group-Level-Income.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">Group Level Income</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="income-wrapper">
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(255, 86, 33, 0.2);                    ">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Ranking-Bonus-Income.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">Ranking Income</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+
+                <div class="income">
+                  <div class="income-left">
+                    <div>
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Acheivment-Bonus.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">Acheivment Bonus</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="income-wrapper">
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(233, 213, 0, 0.1);"                    ;                    ">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/BonusIncome.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">Loyalty Bonus Income</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+
+                <div class="income">
+                  <div class="income-left">
+                    <div>
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Direct-Income.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">Direct Income Bonus</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="income-wrapper">
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(255, 86, 33, 0.2);                    ">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Month-Business.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">This Month Business</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+
+                <div class="income">
+                  <div class="income-left">
+                    <div>
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Month-Associates.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">This Month Associates</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="income-wrapper">
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(33, 132, 250, 0.2);">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Available-Point.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">This Month Business</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(233, 213, 0, 0.15);">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Contract-Point.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">This Month Associates</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <button class="see-detailed">See Detailed</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="income-wrapper">
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(33, 132, 250, 0.2);">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Team-Point.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">This Month Business</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <!-- <button class="see-detailed">See Detailed</button> -->
+                  </div>
+                </div>
+
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(233, 213, 0, 0.15);">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Total-Associates.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">This Month Associates</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <!-- <button class="see-detailed">See Detailed</button> -->
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="income-wrapper">
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(233, 213, 0, 0.1);">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Total-Team-Point.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">This Month Business</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <!-- <button class="see-detailed">See Detailed</button> -->
+                  </div>
+                </div>
+
+                <div class="income">
+                  <div class="income-left">
+                    <div style="background: rgba(68, 194, 131, 0.2);">
+                      <img
+                        class="d-income-icon"
+                        src="./assets/img/Credits.svg"
+                        alt="total"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="d-income-title">This Month Associates</h4>
+                      <h3 class="balance-h3">$ 550</h3>
+                    </div>
+                  </div>
+                  <div class="income-right">
+                    <!-- <button class="see-detailed">See Detailed</button> -->
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="Monthly-Assocates-wrapper">
+              <h3>Monthly Assocates</h3>
+              <div class="user-top-btn Monthly-Assocates-margin">
+                <button>Income</button>
+                <button>Withdrawal Requests</button>
+              </div>
+              <div class="passive-income">
+                <div><h6>Passive Income</h6></div>
+                <div class='passive-income-balance' >$ 397.60</div>
+                <div class='passive-income-btn'><button>View More</button></div>
+              </div>
+              <div class="passive-income">
+                <div><h6>Direct Income Bonus</h6></div>
+                <div class='passive-income-balance' >$ 397.60</div>
+                <div class='passive-income-btn'><button>View More</button></div>
+              </div>
+              <div class="passive-income">
+                <div><h6>Group Level Income</h6></div>
+                <div class='passive-income-balance' >$ 397.60</div>
+                <div class='passive-income-btn'><button>View More</button></div>
+              </div>
+              <div class="passive-income">
+                <div><h6>Ranking Bonus</h6></div>
+                <div class='passive-income-balance' >$ 397.60</div>
+                <div class='passive-income-btn'><button>View More</button></div>
+              </div>
+              <div class="passive-income">
+                <div><h6>Acheivment Income</h6></div>
+                <div class='passive-income-balance' >$ 397.60</div>
+                <div class='passive-income-btn'><button>View More</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-right">
+            <div class="graph-wrapper">
+              <div class="graph-top-bar">
+                <h3>Monthly Assocates</h3>
+                <div class="graph-top-bar-icons">
+                  <div>
+                    <img src="./assets/img/xls-icon.svg" alt="xls" />
+                  </div>
+                  <div>
+                    <img src="./assets/img/print-icon.svg" alt="print" />
+                  </div>
+                  <div>
+                    <img src="./assets/img/pfd-icon.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="graph">
+                <div id="chart-div"></div>
+              </div>
+
+              <div class="user-list">
+                <h2>Monthly Assocates</h2>
+                <div class="user-top-btn">
+                  <button>Top Earners</button>
+                  <button>Joinings</button>
+                </div>
+                <div class="user-wrapper">
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+                  <div class="l-user">
+                    <div>
+                      <div>
+                        <img src="./assets/img/user-1.svg" alt="user">
+                      </div>
+                      <div>
+                        <h5>Rick V. Woods</h5>
+                        <p>d*****4U*****r</p>
+                      </div>
+
+                    </div>
+                    <div class="l-balance">
+                      <h3>$ 397.60</h3>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>
